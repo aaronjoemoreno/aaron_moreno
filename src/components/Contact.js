@@ -4,7 +4,7 @@ import '../assets/styles/contact.css';
 const Contact = () => {
     return(
         <>
-            <h1 className="contact-header">Contact</h1>
+            <h1 className="contact-header" id="contact">Contact</h1>
             <div className="contact-container">
                 <form
                     className="main-form"
@@ -41,7 +41,6 @@ const Contact = () => {
 
                     <input type="submit" className="submit" placeholder="Submit" />
                 </form>
-
             </div>
         </>
     )

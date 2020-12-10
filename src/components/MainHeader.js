@@ -37,9 +37,9 @@ const MainHeader = ({updateTheme, theme}) => {
                 <img className='decor-squiggle' src={sunshine} alt="art" onClick={updateTheme}/>
                 <img className='decor-squiggle-2' src={squiggle} alt="art"/>
                 <img className='decor-squiggle-3' src={squiggle} alt="art"/>
-                <div className='main-button'>
-                    Let's Connect!
-                </div>
+                <a href="#contact" className='main-button'>
+                        Let's Connect!
+                </a>
             <img className='wave' src={wave} alt="wave"/>
         </div>
     )

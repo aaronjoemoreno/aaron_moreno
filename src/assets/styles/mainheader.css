@@ -85,6 +85,7 @@ h1, h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .main-button:hover{
@@ -94,6 +95,8 @@ h1, h2{
     color: #fff;
     transition: .2s ease-in;
 }
+
+
 
 .wave{
     width: 100%;
@@ -107,4 +110,26 @@ h1, h2{
    85% { transform: rotate(5deg); }
    95% { transform: rotate(-5deg); }
   100% { transform: rotate(0deg); }
+}
+
+@media only screen and (max-width: 500px){
+    .decor-squiggle-2, .decor-squiggle-3{
+        width: 200%;
+    }
+
+    .decor-squiggle{
+        width: 40%;
+        grid-area: header;
+    }
+
+    .main-title{
+        z-index: 999;
+    }
+
+    .main-image{
+        width: 600%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        z-index: 0;
+    }
 }
