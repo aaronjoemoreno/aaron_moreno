@@ -1,0 +1,55 @@
+@import './theme.css';
+
+.about{
+    width: 100%;
+    text-align: center;
+}
+
+.about h1{
+    padding: 30px;
+    color: var(--font-main)
+}
+
+.about-container{
+    display: grid;
+    width: 80%;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+}
+
+.img-container{
+    width: 100px;
+}
+
+.img{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.summary{
+    padding: 50px;
+    font-weight: 100;
+    font-family: var(--font-secondary);
+    font-size: var(--font-medium);
+    border-left: 3px solid var(--green);
+}
+
+@media only screen and (max-width: 500px){
+    .about-container{
+        display: grid;
+        width: 100%;
+        padding-bottom: 50px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
+    }
+
+    .summary{
+        padding: 10px;
+    }
+}

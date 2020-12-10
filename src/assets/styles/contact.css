@@ -1,0 +1,57 @@
+.contact-header{
+    text-align: center;
+}
+
+.contact-container{
+    text-align: center;
+}
+
+.contact-container input{
+    width: 60%;
+    height: 40px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.contact-container input:focus{
+    outline: none;
+    border: 1px solid var(--green);
+}
+
+textarea{
+    width: 60%;
+    height: 40px;
+    padding-top: 20px;
+    border: 2px solid;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+textarea:focus{
+    outline: none;
+    border: 1px solid var(--green);
+}
+
+.submit{
+    background: black;
+    color: white;
+}
+.submit:hover{
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+@media only screen and (max-width: 500px){
+    .contact-container input{
+        width: 80%;
+    }
+
+    textarea{
+        width: 80%;
+    }
+
+}

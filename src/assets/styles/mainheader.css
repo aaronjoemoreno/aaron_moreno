@@ -1,0 +1,110 @@
+@import './theme.css';
+body{
+    padding: 20px 5% 0px 5%;
+}
+
+.waveHeader{
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    background: var(--background);
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 200PX);
+    grid-template-areas: "header header header header"
+                         "top-mid-header top-mid-header top-mid-header top-mid-header"
+                         "low-mid-header low-mid-header low-mid-header low-mid-header"
+                         "bottom-header bottom-header bottom-header bottom-header"
+}
+
+
+h1, h2{
+    color: var(--main-font-color);
+}
+.main-title{
+    grid-area: top-mid-header;
+    justify-content: center;
+    text-align: left;
+    padding-left: 5%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.main-image{
+    width: 400%;
+    max-width: 1000px;
+    grid-area: top-mid-header;
+    z-index: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.decor-squiggle{
+    width: 40%;
+    grid-area: top-mid-header;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    animation: wiggle 1s infinite;
+    z-index: 3;
+}
+.decor-squiggle:hover{
+    cursor: pointer;
+}
+
+.decor-squiggle-2{
+    width: 100%;
+    grid-area: header;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    opacity: .7;
+    animation: wiggle 2.0s infinite;
+}
+
+.decor-squiggle-3{
+    width: 100%;
+    grid-area: top-mid-header;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    animation: wiggle 1.5s infinite;
+}
+
+.main-button {
+    width: 200px;
+    height: 50px;
+    color: black;
+    z-index: 999;
+    font-size: 2rem;
+    grid-area: low-mid-header;
+    grid-column-start: 1;
+    margin-left: 8%;
+    background: var(--main-font-color);
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-button:hover{
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    transition: .2s ease-in;
+}
+
+.wave{
+    width: 100%;
+    grid-area: bottom-header;
+    grid-row-start: -1;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}

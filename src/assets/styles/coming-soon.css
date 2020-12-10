@@ -1,0 +1,18 @@
+.coming-soon{
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    border: 1px solid red;
+}
+
+.blog-card{
+    border: .1px solid lightgray;
+    width: 200px;
+    height: 200px;
+}
+
+.projects-card{
+    border: .1px solid lightgray;
+    width: 200px;
+    height: 200px;
+}

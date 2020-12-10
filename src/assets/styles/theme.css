@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+
+:root{
+    --light-theme-font-dark: #252525;
+    --light-theme-font-light: #DBC6B0;
+    --light-theme-background: #DBC6B0;
+    --light-theme-accent-green: #648071;
+    --light-theme-accent: #043347;
+    --light-theme-accent-red: #EF4023;
+
+    --light-theme-monday: #EF4023;
+    --light-theme-tuedsay: #013246;
+    --light-theme-wednesday: #3C896D;
+    --light-theme-thursday: #A38B4F;
+    --light-theme-friday: #4D685A;
+    --light-theme-saturday: #648071;
+    --light-theme-sunday: #514B23;
+
+    --dark-theme-font: #E0E0CE;
+    --dark-theme-background: #172A3A;
+    --dark-theme-accent-green: #09BC8A;
+    --dark-theme-accent-red: #AD343E;
+    --dark-theme-start: #141e30;
+    --dark-theme-end: #243b55;
+
+    --southwest-dark-theme-background: #343A28;
+    --southwest-dark-theme-light: #EFC59E;
+    --southwest-dark-theme-green: #788351;
+    --southwest-dark-theme-red: #C3693B;
+
+    --letter-spacing-med: 1.5rem;
+    --font-small: 1.5rem;
+    --font-medium: 3rem;
+    --font-large: 5rem;
+
+    --font-main: 'Carrois Gothic SC', sans-serif;
+    --font-secondary: 'Jura', sans-serif;
+
+    --letter-spacing-small: 1rem;
+    --letter-spacing-medium: 2rem;
+    --letter-spacing-larger: 3rem;
+}
+
+.dark{
+    --background: var(--dark-theme-background);
+    --main-card: var(--main-card);
+    --main-font-color: var(--dark-theme-font);
+    --green: var(--dark-theme-accent-green);
+    --red: var(--dark-theme-accent-red);
+    --background-start: var(--dark-theme-start);
+    --background-end: var(--dark-theme-end);
+  }
+
+  .light{
+    --background: var(--light-theme-background);
+    --font-light: var(--light-theme-font-light);
+    --font-dark: var(--light-theme-font-dark);
+    --green: var(--light-theme-accent-green);
+    --red: var(--light-theme-accent-red);
+    --monday: var(--light-theme-monday);
+    --tuesday: var(--light-theme-tuedsay);
+    --wednesday: var(--light-theme-wednesday);
+    --thursday: var(--light-theme-thursday);
+    --friday: var(--light-theme-friday);
+    --saturday: var(--light-theme-saturday);
+    --sunday: var(--light-theme-sunday);
+  }
+
+  .southwest-dark{
+    --background: var(--southwest-dark-theme-background);
+    --font-light: var(--southwest-dark-theme-light);
+    --green: var(--southwest-dark-theme-green);
+    --red: var(--southwest-dark-theme-red);
+  }
+
+  h1{
+    font-size: var(--font-large);
+  }
+
+  h2{
+    font-size: var(--font-medium);
+  }
+
+  h3{
+    font-size: var(--font-small);
+  }

@@ -1,22 +1,34 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { useState } from "react";
+// import { Link } from "gatsby"
+import Layout from "../components/layout";
+import MainHeader from '../components/MainHeader';
+import About from '../components/About';
+import Bio from '../components/Bio';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import SEO from "../components/seo";
+// import ComingSoon from '../components/ComingSoon';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const IndexPage = () => {
+  const [theme, setTheme] = useState('dark')
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+  const updateTheme = () => {
+    theme === 'dark' ? setTheme('light') : setTheme('dark');
+  }
+
+  return(
+    <div className={theme}>
+      <Layout>
+        <SEO title="Home" />
+        <MainHeader updateTheme={updateTheme} theme={theme}/>
+        <About/>
+        <Bio />
+        <Contact />
+        <Footer />
+        {/* <ComingSoon /> */}
+      </Layout>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+  )
+}
 
 export default IndexPage
