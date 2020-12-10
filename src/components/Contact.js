@@ -10,7 +10,6 @@ const Contact = () => {
                     className="main-form"
                     name="contact"
                     method="POST"
-                    data-netlify-recaptcha="true"
                     data-netlify="true"
                 >
                     <input type="text" className="name" placeholder="name" name="name" required/>
