@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-// import Img from "gatsby-image";
+import React, { useEffect } from 'react'
 import image from '../images/image.png'
 import squiggle from '../images/squiggle.png'
 import sunshine from '../images/sunshine.svg'
@@ -13,6 +12,7 @@ const MainHeader = ({updateTheme, theme}) => {
         console.log('theme changed')
     }, [theme])
 
+
     const data = useStaticQuery(graphql`
     query data{
         site{
@@ -21,9 +21,10 @@ const MainHeader = ({updateTheme, theme}) => {
             description
             bio
           }
-        }
-      }
-  `)
+        },
+    }`)
+
+  console.log(data)
 
   const { site: { siteMetadata }} = data;
 

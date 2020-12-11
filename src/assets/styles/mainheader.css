@@ -120,12 +120,15 @@ h1, h2{
     .decor-squiggle{
         width: 40%;
         grid-area: header;
+        grid-column-start: 3;
+        padding-left: 4rem;
     }
 
     .main-title{
         grid-area: header;
         padding-top: 40px;
-        grid-column-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
     .main-title h1{
         font-size: 3rem;
