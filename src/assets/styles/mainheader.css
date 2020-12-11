@@ -79,7 +79,7 @@ h1, h2{
     grid-area: low-mid-header;
     grid-column-start: 1;
     margin-left: 8%;
-    background: var(--main-font-color);
+    background: white;
     border: none;
     border-radius: 50px;
     display: flex;
@@ -123,7 +123,12 @@ h1, h2{
     }
 
     .main-title{
-        z-index: 999;
+        grid-area: header;
+        padding-top: 40px;
+        grid-column-start: 3;
+    }
+    .main-title h1{
+        font-size: 3rem;
     }
 
     .main-image{
